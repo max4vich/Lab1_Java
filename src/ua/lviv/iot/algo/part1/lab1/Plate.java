@@ -7,7 +7,6 @@ import lombok.*;
 @NoArgsConstructor
 
 public class Plate {
-
     private float diameter;
     private String material;
     private String colour;
@@ -48,15 +47,9 @@ public class Plate {
         plates[2] = new Plate(1.3f, "glass", "white", false,false);
         plates[3] = new Plate();
 
-        plates[0].wash();
-        plates[1].dirty();
-        plates[2].eat();
-        plates[3].addFood();
-
-        for (int i = 0; i < plates.length; i++) {
-            System.out.println("Plate " + "ID: " + i + ": " + plates[i].toString());
+        for (Plate plate: plates) {
+            System.out.println(plate.toString());
         }
-
     }
 
 }
