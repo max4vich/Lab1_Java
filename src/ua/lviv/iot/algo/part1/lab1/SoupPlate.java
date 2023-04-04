@@ -1,5 +1,4 @@
 package ua.lviv.iot.algo.part1.lab1;
-import lombok.*;
 public class SoupPlate extends Plate {
     protected float plateDepth;
     protected String soupType;

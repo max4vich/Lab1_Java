@@ -4,25 +4,20 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class PlateManager {
-
     public static List<Plate> plates = new ArrayList<>();
-
     public static void addPlate(Plate plate) {
         plates.add(plate);
     }
-
     public static List<Plate> findAllWithMaxFoodWeightGreaterThan(int maxFoodWeight) {
         return plates.stream()
                 .filter(plate -> plate.getMaxFoodWeight() > maxFoodWeight)
                 .collect(Collectors.toList());
     }
-
     public static List<Plate> findGlassPlates() {
         return plates .stream()
                 .filter(plate -> plate.getMaterial().equals("glass"))
                 .collect(Collectors.toList());
     }
-
     public static void main(String[] args) {
         
         SoupPlate soupPlate1 = new SoupPlate(17.3f, "glass", "white", true, false, 8.1f, "mushroom soup");

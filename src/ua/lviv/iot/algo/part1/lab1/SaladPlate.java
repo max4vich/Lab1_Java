@@ -1,7 +1,6 @@
 package ua.lviv.iot.algo.part1.lab1;
 
-import lombok.*;
-public class SaladPlate extends Plate {
+public class SaladPlate extends Plate{
     private String saladPlateShape;
     private boolean dishwasherSafe;
 
@@ -28,5 +27,6 @@ public class SaladPlate extends Plate {
                 "\nWhat is maximum weight of food? " + getMaxFoodWeight() + "\n";
 
     }
+
 }
 
