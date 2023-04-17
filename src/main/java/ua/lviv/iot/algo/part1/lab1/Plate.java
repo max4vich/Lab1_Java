@@ -15,4 +15,12 @@ public abstract class Plate {
 
     protected abstract double getMaxFoodWeight();
 
+    public String getHeaders(){
+        return "diameter, material, colour, isClean, hasFood";
+    }
+
+    public String toCSV(){
+        return diameter + ", " + material + ", " + colour + ", " + isClean + ", " + hasFood;
+    }
+
 }

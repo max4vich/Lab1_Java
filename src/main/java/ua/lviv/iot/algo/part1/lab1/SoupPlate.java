@@ -44,5 +44,11 @@ public class SoupPlate extends Plate {
                 + getMaxFoodWeight()
                 + "\n";
     }
+    public String getHeaders(){
+        return super.getHeaders() + ", plateDepth, soupType";
+    }
 
+    public String toCSV(){
+        return super.toCSV() + ", " + plateDepth + ", " + soupType;
+    }
 }

@@ -2,6 +2,7 @@ import org.junit.jupiter.api.Test;
 import ua.lviv.iot.algo.part1.lab1.SoupPlate;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 class SoupPlateTest {
+    SoupPlate soupPlate1 = new SoupPlate(17.3f, "glass", "white", true, false, 8.1f, "mushroom soup");
     @Test
     void getMaxFoodWeightTest() {
         SoupPlate soupPlate = new SoupPlate(17.3f, "glass", "white", true, false, 8.1f, "mushroom soup");
@@ -30,5 +31,15 @@ class SoupPlateTest {
                 + "\n";
         assertEquals(required_output,soupPlate.toString());
     }
+    @Test
+    void getHeadersTest(){
+        String expectedString = "diameter material colour isClean hasFood plateDepth soupType";
+        assertEquals(expectedString,soupPlate1.getHeaders());
+    }
 
+    @Test
+    void toCSVTest(){
+        String expectedString = "17.3, glass, white, true, false, 8.1, mushroom soup";
+        assertEquals(expectedString, soupPlate1.toCSV());
+    }
 }

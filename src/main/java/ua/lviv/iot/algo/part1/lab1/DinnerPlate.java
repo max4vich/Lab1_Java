@@ -18,4 +18,11 @@ public class DinnerPlate extends Plate {
     }
 
     private static final double FOOD_DENSITY = 1.2;
+    public String getHeaders(){
+        return super.getHeaders();
+    }
+
+    public String toCSV(){
+        return super.toCSV();
+    }
 }
