@@ -11,4 +11,13 @@ public class DessertPlate extends Plate {
     public double getMaxFoodWeight() {
         return getDiameter() * getDiameter() * Math.PI;
     }
+
+    public String getHeaders(){
+        return super.getHeaders();
+    }
+
+    public String toCSV(){
+        return super.toCSV();
+    }
+
 }

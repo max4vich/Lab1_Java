@@ -1,5 +1,6 @@
 package ua.lviv.iot.algo.part1.lab1;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -31,3 +32,4 @@ public final class PlateManager {
                 .collect(Collectors.toList());
     }
 }
+

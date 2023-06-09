@@ -42,4 +42,11 @@ public class SaladPlate extends Plate {
                 + isDishwasherSafe + "\nWhat is maximum weight of food? "
                 + getMaxFoodWeight() + "\n";
     }
+    public String getHeaders(){
+        return super.getHeaders() + ", saladPlateShape, isDishwasherSafe";
+    }
+
+    public String toCSV(){
+        return super.toCSV() + ", " + saladPlateShape + ", " + isDishwasherSafe;
+    }
 }

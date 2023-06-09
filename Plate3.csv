@@ -1,0 +1,12 @@
+diameter, material, colour, isClean, hasFood, plateDepth, soupType
+17.3, glass, white, true, false, 8.1, mushroom soup
+15.4, plastic, blue, true, false, 8.3, borsch
+diameter, material, colour, isClean, hasFood, saladPlateShape, isDishwasherSafe
+23.6, glass, white, true, false, oval, true
+27.1, ceramic, grey, true, false, cube, true
+diameter, material, colour, isClean, hasFood
+14.3, glass, grey, true, false
+11.5, ceramic, white, true, false
+diameter, material, colour, isClean, hasFood
+40.2, ceramic, white, true, false
+35.2, ceramic, white, true, false
