@@ -33,7 +33,7 @@ class SoupPlateTest {
     }
     @Test
     void getHeadersTest(){
-        String expectedString = "diameter material colour isClean hasFood plateDepth soupType";
+        String expectedString = "diameter, material, colour, isClean, hasFood, plateDepth, soupType";
         assertEquals(expectedString,soupPlate1.getHeaders());
     }
 

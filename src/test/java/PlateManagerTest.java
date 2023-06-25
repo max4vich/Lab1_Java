@@ -56,7 +56,7 @@ class PlateManagerTest {
         finalList.add(dessertPlate1);
         plateWriter.writeToFile(finalList);
         List<String> finalLines = Files.readAllLines(Paths.get("Plate.csv"));
-        List<String> expectedLines = Files.readAllLines(Paths.get("Plate3.csv"));
+        List<String> expectedLines = Files.readAllLines(Paths.get("Plate2.csv"));
         assertEquals(expectedLines,finalLines);
     }
 }
